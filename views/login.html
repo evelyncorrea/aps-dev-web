@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/login.css">
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
 </head>
 <body>   
@@ -18,19 +18,17 @@
     <div class="content">
 
         <form action="/login" method="post">
-            <div>
+            <div class="box-form">
                 <h1>Login</h1>
+                <label>Email:</label>
+                <input type="email" placeholder="exemplo@email.com">
 
-                <div>
-                    <label>Email:</label>
-                    <input type="email" placeholder="exemplo@email.com">
+                <label>Senha:</label>
+                <input type="password">
 
-                    <label>Senha:</label>
-                    <input type="password">
-
-                    <button type="submit">Login</button>
-                </div>
-            </div>  
+                <button type="submit" class="button">Entrar</button>   
+            </div> 
+            
         </form>
     </div>
     <footer>© Bruno Agiani, Erick Fraga e Evelyn Correa. 2021</footer>

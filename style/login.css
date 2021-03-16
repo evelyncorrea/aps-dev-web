@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f2f2f0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: lightblue;
+    font-size: large;
+}
+
+.menu a {
+    margin: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: lightseagreen;
+}
+
+/* Login */
+
+.content{
+    margin-top:100px;
+}
+
+.box-form{
+    flex-direction: column;
+    display: flex;  
+    border: 2px solid #20b2aa;
+    border-radius: 20px;
+    padding: 50px 80px 70px 80px;
+    background-color: white;
+}
+
+.box-form:hover{
+    -moz-transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	transform: scale(1.02);
+
+}
+
+h1{
+    text-align: center
+
+}
+label{
+    margin:6px;
+}
+
+input{
+    border-radius: 7px;
+    border: 1px solid black;
+}
+
+.button{
+    margin-top:25px;
+    margin-left: 26%;
+    width:100px;  
+    background-color:#006eeb;
+    color: #fff; 
+    border-radius:10px;
+    border: 1px solid #006eeb;
+    height:40px;              
+}
+
+.button:hover{
+    -moz-transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+}
+
+
+
+
+
