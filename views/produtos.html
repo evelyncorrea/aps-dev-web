@@ -37,21 +37,49 @@
         </nav>
 
         <div class="content">
-            <h1 class>PRODUTOS</h1>
+            <h1 class="page-title">PRODUTOS</h1>
 
-            <div class="card">
-                <p class="card-title">titulo do produto</p>
-                <p class="card-description">descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto</p>
-                
-                <div class="card-add-to-cart">
-                    <div class="card-quantity">
-                        <button onclick="remove()">-</button>
-                        <p class="selected-qtd">1</p>
-                        <button onclick="add()">+</button>
+            <section class="cards">
+                <div class="card">
+                    <p class="card-title">titulo do produto</p>
+                    <p class="card-description">descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto</p>
+                    
+                    <div class="card-add-to-cart">
+                        <div class="card-quantity">
+                            <button onclick="remove(0)">-</button>
+                            <p class="selected-qtd">1</p>
+                            <button onclick="add(0)">+</button>
+                        </div>
+                        <button class="card-add-quantity" onclick="addProduct(0)">Adicionar ao carrinho</button>
                     </div>
-                    <button class="card-add-quantity" onclick="addProduct()">Adicionar ao carrinho</button>
                 </div>
-            </div>
+                <div class="card">
+                    <p class="card-title">titulo do produto</p>
+                    <p class="card-description">descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto</p>
+                    
+                    <div class="card-add-to-cart">
+                        <div class="card-quantity">
+                            <button onclick="remove(1)">-</button>
+                            <p class="selected-qtd">1</p>
+                            <button onclick="add(1)">+</button>
+                        </div>
+                        <button class="card-add-quantity" onclick="addProduct(1)">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">titulo do produto</p>
+                    <p class="card-description">descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto</p>
+                    
+                    <div class="card-add-to-cart">
+                        <div class="card-quantity">
+                            <button onclick="remove(2)">-</button>
+                            <p class="selected-qtd">1</p>
+                            <button onclick="add(2)">+</button>
+                        </div>
+                        <button class="card-add-quantity" onclick="addProduct(2)">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <footer>© Bruno Agiani, Erick Fraga e Evelyn Correa. 2021</footer>

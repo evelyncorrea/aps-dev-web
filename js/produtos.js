@@ -1,16 +1,16 @@
 var value = document.getElementsByClassName("selected-qtd");
 
-function add() {
-    value[0].innerText++;
+function add(id) {
+    value[id].innerText++;
 }
 
-function remove() {
-    if(value[0].innerText > 1) {
-        value[0].innerText--;
+function remove(id) {
+    if(value[id].innerText > 1) {
+        value[id].innerText--;
     }
 }
 
-function addProduct() {
-    alert("Quantidade adicionada: " + value[0].innerHTML);
-    value[0].innerHTML = 1;
+function addProduct(id) {
+    alert("Quantidade adicionada: " + value[id].innerHTML);
+    value[id].innerHTML = 1;
 }

@@ -2,7 +2,16 @@
     padding: 20px;
 }
 
+.page-title {
+    display: flex;
+}
+
+.cards {
+    display: flex;
+}
+
 .card {
+    margin: 0px 10px;
     padding: 10px;
     background-color: lightgrey;
     border-radius: 10px;
@@ -21,7 +30,6 @@
 .card-add-to-cart {
     display: flex;
     justify-content: space-around;
-
 }
 
 .card-quantity {
