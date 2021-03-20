@@ -10,7 +10,7 @@ function remove(id) {
     }
 }
 
-function addProduct(id) {
+function addProductToCart(id) {
     alert("Quantidade adicionada: " + value[id].innerHTML);
     value[id].innerHTML = 1;
 }
