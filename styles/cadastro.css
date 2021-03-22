@@ -2,12 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:white;
-}
-
-h1 {
-    color: grey;
-    font-size: xx-large;
+    background-color:#f2f2f0;
 }
 
 header {
@@ -75,8 +70,8 @@ footer {
 
 
 
-
-.main {
+/* Pagina Cadastro*/
+.form {
     height:50vh;
     width:100vw;
     display:flex;
@@ -90,6 +85,7 @@ footer {
 
 .h1{
     margin: 0px;
+    text-transform: uppercase;
 }
 
 .container_label{
@@ -115,25 +111,53 @@ footer {
 
 }
 
-
-label,input{
-    margin-left: 10px;
-    margin-right: 10px;
-
+input{
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
+label{
+    margin: 3px 10px 0 10px;
+}
 
 .container_button{
     margin-left: 13px;
     margin-bottom: 10px;
     padding-bottom: 10px;
+
 }
 
 .container{
-    border: 2px solid #4262ff;
+    border: 2px solid #20b2aa;
     border-radius:20px;
-    margin-top: 50px;
-
+    margin-top: 30px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
 
 }
+
+button{
+    margin-top:25px;
+    margin-left: 26%;
+    width:80px;  
+    background-color:#006eeb;
+    color: #fff; 
+    border-radius:10px;
+    border: 1px solid #006eeb;
+    height:30px;  
+
+}
+
+button:hover{
+    -moz-transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+}
+
+
 
