@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f2f2f0;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 65px;
+    background: lightseagreen;
+}
+
+.logo {
+    padding: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+
+    width: 200px;
+}
+
+.buttons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+    background-color: lightblue;
+    font-size: large;
+}
+
+.menu a {
+    margin: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+    background: lightseagreen;
+}
+
+
+
+/* Pagina Cadastro*/
+.form {
+    height:50vh;
+    width:100vw;
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    margin-top:30px;
+
+}
+
+.h1{
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.container_label{
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.container_label_top{
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 10px;
+    margin-bottom: 40px;
+    padding-top:40px;
+
+
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+label{
+    margin: 3px 10px 0 10px;
+}
+
+.container_button{
+    padding-bottom: 10px;
+    margin: 0 0 10px 13px;
+
+}
+
+.container{
+    border: 2px solid #20b2aa;
+    border-radius:20px;
+    margin-top: 30px;
+    background-color: white;
+    padding:0 10px 0 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+}
+
+button{
+    margin-top:25px;
+    margin-left: 26%;
+    width:80px;  
+    background-color:#006eeb;
+    color: #fff; 
+    border-radius:10px;
+    border: 1px solid #006eeb;
+    height:30px;  
+
+}
+
+button:hover{
+    -moz-transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+}
