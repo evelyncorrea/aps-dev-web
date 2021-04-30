@@ -71,3 +71,17 @@ footer {
     height: 50px;
     background: lightseagreen;
 }
+
+#carrinho {
+    display: none;
+}
+
+#carrinho-content {
+    display: block;
+}
+
+.carrinho-produto {
+    border: 1px solid black;
+    padding: 8px;
+
+}

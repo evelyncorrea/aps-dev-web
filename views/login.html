@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/login.css">
+
+    <script src="../js/account.js"></script>
 </head>
 <body>
     <header>
@@ -30,23 +32,21 @@
     </header>
     <nav class="menu">
         <a href="./index.html">Início</a>
-        <a href="./produtos.html">Produtos</a>
     </nav>
 
     <div class="content">
 
-        <form action="/login" method="post">
+        <form onsubmit="validateLogin()">
             <div class="box-form">
                 <h1>Login</h1>
                 <label>Email:</label>
-                <input type="email" placeholder="exemplo@email.com">
+                <input type="email" id="email" placeholder="exemplo@email.com">
 
                 <label>Senha:</label>
-                <input type="password">
+                <input type="password" id="senha">
 
                 <button type="submit" class="button">Entrar</button>   
             </div> 
-
         </form>
     </div>
     <footer>© Bruno Agiani, Erick Fraga e Evelyn Correa. 2021</footer>

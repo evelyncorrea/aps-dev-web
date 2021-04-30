@@ -11,6 +11,10 @@
         
         <link rel="stylesheet" href="../styles/reset.css">
         <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/produtos.css">
+
+        <script src="../js/produtos.js"></script>
+        <script src="../js/account.js"></script>
     </head>
     
     <body>
@@ -28,12 +32,65 @@
                 </a>
             </div>
         </header>
+
         <nav class="menu">
             <a href="./index.html">Início</a>
-            <a href="./produtos.html">Produtos</a>
+
+            <a onclick="toggleCart()" class="carrinho-button">
+                <span class="material-icons">shopping_cart</span>
+            </a>
         </nav>
 
-        <div class="content">conteudo</div>
+        <div id="carrinho">
+            <a onclick="toggleCart()">X Fechar</a>
+            
+            <div id="carrinho-content">
+            </div>
+        </div>
+
+        <div class="content"><h1 class="page-title">PRODUTOS</h1>
+            <section class="cards">
+                <div class="card">
+                    <p class="card-title">Produto 1</p>
+                    <p class="card-description">descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto</p>
+                    
+                    <div class="card-add-to-cart">
+                        <div class="card-quantity">
+                            <button onclick="remove(0)">-</button>
+                            <p class="selected-qtd">1</p>
+                            <button onclick="add(0)">+</button>
+                        </div>
+                        <button class="card-add-quantity" onclick="addProductToCart(0, 'Produto 1')">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">Produto 2</p>
+                    <p class="card-description">descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto</p>
+                    
+                    <div class="card-add-to-cart">
+                        <div class="card-quantity">
+                            <button onclick="remove(1)">-</button>
+                            <p class="selected-qtd">1</p>
+                            <button onclick="add(1)">+</button>
+                        </div>
+                        <button class="card-add-quantity" onclick="addProductToCart(1, 'Produto 2')">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">Produto 3</p>
+                    <p class="card-description">descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto descrição do produto</p>
+                    
+                    <div class="card-add-to-cart">
+                        <div class="card-quantity">
+                            <button onclick="remove(2)">-</button>
+                            <p class="selected-qtd">1</p>
+                            <button onclick="add(2)">+</button>
+                        </div>
+                        <button class="card-add-quantity" onclick="addProductToCart(2, 'Produto 3')">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <footer>© Bruno Agiani, Erick Fraga e Evelyn Correa. 2021</footer>
     </body>

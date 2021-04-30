@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="../styles/reset.css">
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="stylesheet" href="../styles/cadastro.css">
+
+        <script src="../js/account.js"></script>
     </head>
     <body>
         <header>
@@ -31,33 +33,29 @@
         </header>
         <nav class="menu">
             <a href="./index.html">Início</a>
-            <a href="./produtos.html">Produtos</a>
         </nav>
 
-        <form class="form">
+        <form class="form" onsubmit="register()">
             <h1 class="h1">Cadastro</h1>
                 <div class="container"> 
                     <div class="container_label_top">
                         <label>Nome:</label>
-                        <input type="text" name="nome" placeholder="Informe o nome completo">  
+                        <input type="text" name="nome" id="nome" placeholder="Informe o nome completo">  
 
                         <label>CPF:</label>
-                        <input type="text" name="cpf" placeholder="Informe o cpf">
+                        <input type="text" name="cpf" id="cpf" placeholder="Informe o cpf">
                     </div>
 
                     <div class="container_label">
                         <label>E-mail:</label>
-                        <input type="email" placeholder="Informe o email">
+                        <input type="email" name="email" id="email" placeholder="Informe o email">
 
                         <label>Senha:</label>
-                        <input type="password" name="senha" placeholder="Informe a senha desejada">
+                        <input type="password" name="senha" id="senha" placeholder="Informe a senha desejada">
                     </div>
 
-                    <div class="container_button">
-                        <button>Cadastrar</button>
-                    </div>
+                    <button class="container_button" type="submit">Cadastrar</button>
                 </div>
-
         </form>
 
         <footer>© Bruno Agiani, Erick Fraga e Evelyn Correa. 2021</footer>
